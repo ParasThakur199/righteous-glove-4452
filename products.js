@@ -111,6 +111,7 @@ let obj = [
 let main = document.querySelector('#bodysection');
 console.log(obj)
 let appendData = (data)=>{
+    main.innerHTML = null;
     data.forEach(el => {
         let div = document.createElement('div');
         div.setAttribute('class','singleData');
@@ -138,3 +139,4 @@ let appendData = (data)=>{
     });
 }
 appendData(obj);
+

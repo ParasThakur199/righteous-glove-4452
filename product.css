@@ -46,6 +46,11 @@ img {
     margin-bottom: 20px;
 }
 
+.Segment .label{
+    line-height: 40px;
+    font-weight: 700;
+}
+
 .Segment>span {
     color: grey;
     line-height: 30px;
