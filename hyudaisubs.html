@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        #photo{
+            width: auto;
+            height: auto;
+            border: 1px solid red;
+            position: relative ;
+        }
+        #photo>img{
+            width: 100%;
+        }
+        #box{
+            position: absolute;
+            width: 50%;
+            height: 400px;
+            top: 5%;
+            left: 8%;
+            border: 1px solid black;
+            background-color: white;
+
+        }
+        #lilbox{
+            position: absolute;
+            width: 25%;
+            height: 90px;
+            top: 5%;
+            left: 65%;
+            border: 1px solid red;
+            background-color: aliceblue;
+            
+        }
+        #lilbox>p,h3{
+            margin-left: 10px;
+        }
+        #second{
+            display: flex;
+            margin: auto;
+            border: 1px solid blue;
+        }
+        #dabbe{
+            border: 1px solid blue;
+            width: 20%;
+            height: auto;
+            margin: auto;
+            
+        }
+
+        #dabbe>img{
+            width: 35%;
+            height: 35%; 
+            margin-left: 25%;
+            border: 5px solid grey;
+           
+            border-radius: 50%;      
+        }
+        #faq{
+            border:1px solid red;
+            width: auto;
+            height: 400px;
+        }
+        #third{
+            border: 1px solid blue;
+            width: auto;
+            height: 200px;
+            display: flex;
+            margin-top: 25px;
+
+        }
+        #third>div{
+            margin: auto;            
+            border-radius: 25px;           
+        }
+        #third>div:hover{
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        #third>div>a>img{
+            height: 50%;
+            width: 150px;
+            margin: auto;
+        }
+        #four{
+            border: 1px solid blue;
+            width: auto;
+            height: 200px;
+            display: flex;
+        }
+        #four>div{
+            width: 22%;
+            height: auto;
+            margin: auto;
+            margin-left: 100px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div id="navbar"></div>
+
+    <div id="photo">
+        <img src="https://grand.hyundaimotor.in/image/journal/article?img_id=4007622&t=1663045922691" >
+
+        <div id="box">
+
+            <h2>Hyundai <span>Subscription</span> </h2>
+            <p>Powered By Revv</p>
+
+            <h5>Hyundai Car Subscription</h5>
+
+            <select id="">
+                <option >Select City</option>
+                <option >Bangalore</option>
+                <option >Hyderabad</option>
+                <option >Mumbai</option>
+                <option >Delhi</option>
+                <option >Lucknow</option>
+        </select>
+        <br>
+
+        <input type="number" placeholder="Select Date"> <br>
+        
+        <button>Search</button>
+
+        </div>
+
+        <div id="lilbox">
+
+            <p>Looking For Hyundai Subscription</p>
+            <h3>By the Year <span>Explore</span></h3>
+
+        </div>
+
+    </div>
+    <h2>How it Works</h2>
+    <div id="second">
+
+       
+
+        <div id="dabbe">
+
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Credit_card_font_awesome.svg/512px-Credit_card_font_awesome.svg.png">
+            <h4>Book & Pay</h4>
+            <p>Pick your favourite car time & place</p>
+        </div>
+
+        <div id="dabbe">
+
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Credit_card_font_awesome.svg/512px-Credit_card_font_awesome.svg.png">
+            <h4>Book & Pay</h4>
+            <p>Pick your favourite car time & place</p>
+        </div>
+
+        <div id="dabbe">
+
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Credit_card_font_awesome.svg/512px-Credit_card_font_awesome.svg.png">
+            <h4>Book & Pay</h4>
+            <p>Pick your favourite car time & place</p>
+        </div>
+
+        <div id="dabbe">
+
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Credit_card_font_awesome.svg/512px-Credit_card_font_awesome.svg.png">
+            <h4>Book & Pay</h4>
+            <p>Pick your favourite car time & place</p>
+        </div>        
+       
+
+    </div>
+
+    <h2>FAQs</h2>
+    <div id="faq">
+
+
+    </div>
+    <div id="third">
+
+        <div>
+          <a href="https://www.thehindu.com/"> <img src="https://www.revv.co.in/imgs/company_logo/the-hindu-newpaper.webp" > </a>
+          </div> 
+        <div>
+         <a href="https://auto.economictimes.indiatimes.com/">  <img src="https://www.revv.co.in/imgs/company_logo/The-Economic-Times.webp" > </a>  
+        </div>
+        <div>
+         <a href="https://www.financialexpress.com/"> <img src="https://www.revv.co.in/imgs/company_logo/Indian_express.webp" > </a>   
+        </div>
+        <div>
+          <a href="https://bwdisrupt.businessworld.in/">  <img src="https://www.revv.co.in/imgs/company_logo/BW-logo.png" > </a> 
+        </div>
+        <div>
+          <a href="https://yourstory.com/"> <img src="https://www.revv.co.in/imgs/company_logo/YourStory.png" > </a>  
+        </div>
+        <div>
+          <a href="https://www.businessinsider.in/">  <img src="https://www.revv.co.in/imgs/company_logo/businessinsider.png" > </a>  
+        </div>
+        
+    </div>
+    <h2>Our Journey </h2>
+
+    <div id="four">
+        <div>
+            <img src="https://www.revv.co.in/grapheneImages/newopen/ic-happy-cus.svg" >
+            <h3>2500+</h3>
+            <p>Happy Subscribers</p>
+        </div>
+
+        <div>
+            <img src="https://www.revv.co.in/grapheneImages/newopen/ic-across-india.svg" >
+            <h3>22+ Cities</h3>
+            <p>Across India</p>
+        </div>
+
+        <div>
+            <img src="https://www.revv.co.in/grapheneImages/newopen/ic-subscription.svg" >
+            <h3>50Mn+</h3>
+            <p>Kms Travelled</p>
+        </div>
+
+        <div>
+            <img src="https://www.revv.co.in/grapheneImages/newopen/ic-customer-rating.svg" >
+            <h3>4.8 / 5</h3>
+            <p>20k+ reviewers</p>
+        </div>
+
+    </div>
+
+    <h2>What our customers are saying</h2>
+
+    <div id="five">
+
+        <div>
+
+        </div>
+
+    </div>
+
+    
+    
+</body>
+</html>
