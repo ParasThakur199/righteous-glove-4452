@@ -111,6 +111,7 @@ let obj = [
 let main = document.querySelector('#bodysection');
 console.log(obj)
 let appendData = (data)=>{
+    main.innerHTML = null;
     data.forEach(el => {
         let div = document.createElement('div');
         div.setAttribute('class','singleData');
@@ -138,3 +139,152 @@ let appendData = (data)=>{
     });
 }
 appendData(obj);
+
+function lowtohigh(e) {
+    // console.log(e.target.value);
+    if (e.target.value == 'Low') {
+        let lowdata = obj.sort((a, b) => {
+            return (a.Price - b.Price);
+        });
+        appendData(lowdata);
+    } else if (e.target.value == 'High') {
+        let highdata = obj.sort((a, b) => {
+            return (b.Price - a.Price)
+        });
+        appendData(highdata);
+    } else {
+        appendData(obj);
+    }
+
+}
+
+
+const filterdata = (() => {
+    let Hatch = document.querySelector('#Hatchback').checked;
+    let Sedan = document.querySelector('#Sedan').checked;
+    let SUV = document.querySelector('#SUV').checked;
+    if (Hatch == true) {
+        let datta = document.querySelector('#Hatchback').name;
+        let res = obj.filter((el) => {
+            if (el.Type == datta) {
+                return (datta);
+            }
+        })
+        appendData(res);
+    }
+    if (SUV == true) {
+        let datta = document.querySelector('#SUV').name;
+        let res = obj.filter((el) => {
+            if (el.Type == datta) {
+                return (datta);
+            }
+        })
+        appendData(res);
+    }
+    if (Sedan == true) {
+        let datta = document.querySelector('#Sedan').name;
+        let res = obj.filter((el) => {
+            if (el.Type == datta) {
+                return (datta);
+            }
+        })
+        appendData(res);
+    }
+});
+
+const filterbrand = ()=>{
+    let Maruti = document.querySelector('#Maruti').checked;
+    let Hyundai = document.querySelector('#Hyundai').checked;
+    let Toyota = document.querySelector('#Toyota').checked;
+    let Mahindra = document.querySelector('#Mahindra').checked;
+
+    if(Maruti==true){
+        let data1 = document.querySelector('#Maruti').name;
+        let res = obj.filter((el)=>{
+            if(el.Brand==data1){
+                return data1;
+            }
+        })
+        appendData(res);
+    }
+
+    if(Hyundai==true){
+        let data1 = document.querySelector('#Hyundai').name;
+        let res = obj.filter((el)=>{
+            if(el.Brand==data1){
+                return data1;
+            }
+        });
+        appendData(res);
+    }
+
+    if(Toyota==true){
+        let data1 = document.querySelector('#Toyota').name;
+        let res = obj.filter((el)=>{
+            if(el.Brand==data1){
+                return data1;
+            }
+        });
+        appendData(res);
+    }
+
+    if(Mahindra==true){
+        let data1 = document.querySelector('#Mahindra').name;
+        let res = obj.filter((el)=>{
+            if(el.Brand==data1){
+                return data1;
+            }
+        });
+        appendData(res);
+    }
+
+}
+const filtertype=(()=>{
+    let Automatic = document.querySelector('#Automatic').checked;
+    let Manual = document.querySelector('#Manual').checked;
+
+    if(Automatic==true){
+        let data2 = document.querySelector('#Automatic').name;
+        let res = obj.filter((el)=>{
+            if(el.Transmission==data2){
+                return data2
+            }
+        })
+        appendData(res);
+    }
+
+    if(Manual==true){
+        let data2 = document.querySelector('#Manual').name;
+        let res = obj.filter((el)=>{
+            if(el.Transmission==data2){
+                return true;
+            }
+        });
+        appendData(res);
+    }
+}); 
+
+const filterseats=(()=>{
+    let seatsless = document.querySelector('#seatsless').checked;
+    let seatshigh = document.querySelector('#seatshigh').checked;
+
+    if(seatsless==true){
+        let data3 = document.querySelector('#seatsless').name;
+        let res = obj.filter((el)=>{
+            if(el.Seats==5){
+                return el.Seats
+            }
+        });
+        appendData(res);
+    }
+
+    if(seatshigh==true){
+        let data3 = document.querySelector('#seatshigh').name;
+        let res = obj.filter((el)=>{
+            if(el.Seats==7){
+                return el.Seats;
+            }
+        });
+        appendData(res);
+    }
+});

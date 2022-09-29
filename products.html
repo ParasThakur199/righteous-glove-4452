@@ -12,37 +12,37 @@
 <body>
     <div id="top">
         <label for="Sort by">Sort by : </label>
-        <select name="Popularity" id="Popularity">
+        <select name="Popularity" id="Popularity" onchange="lowtohigh(event)">
             <option value=""> -- Popularity -- </option>
-            <option value="Price : Low to High">Price : Low to High</option>
-            <option value="Price : High to Low">Price : High to Low</option>
+            <option value="Low">Price : Low to High</option>
+            <option value="High">Price : High to Low</option>
         </select>
     </div>
     <div id="container">
 
         <div id="sidebar">
             <div class="Segment">
-                <label for="Segment"><b>Segment </b></label><br>
-                <input type="checkbox" name="Hatchback" id="Hatchback"><span> Hatchback</span><br>
-                <input type="checkbox" name="Sedan" id="Sedan"><span> Sedan</span><br>
-                <input type="checkbox" name="SUV" id="SUV"><span> SUV</span><br>
+                <label for="Segment" class="label">Segment</label><br>
+                <input type="checkbox" name="Hatchback" onclick="filterdata()" id="Hatchback"><span> Hatchback</span><br>
+                <input type="checkbox" name="Sedan" onclick="filterdata()" id="Sedan"><span> Sedan</span><br>
+                <input type="checkbox" name="SUV" onclick="filterdata()" id="SUV"><span> SUV</span><br>
             </div>
             <div class="Segment">
-                <label for="Segment"><b>Brand</b></label><br>
-                <input type="checkbox" name="Maruti" id="Maruti"><span> Maruti</span><br>
-                <input type="checkbox" name="Hyundai" id="Hyundai"><span> Hyundai</span><br>
-                <input type="checkbox" name="Toyota" id="Toyota"><span> Toyota</span><br>
-                <input type="checkbox" name="Mahindra" id="Mahindra"><span> Mahindra</span><br>
+                <label for="Segment" class="label">Brand</label><br>
+                <input type="checkbox" name="Maruti" onclick="filterbrand()" id="Maruti"><span> Maruti</span><br>
+                <input type="checkbox" name="Hyundai" onclick="filterbrand()" id="Hyundai"><span> Hyundai</span><br>
+                <input type="checkbox" name="Toyota" onclick="filterbrand()" id="Toyota"><span> Toyota</span><br>
+                <input type="checkbox" name="Mahindra" onclick="filterbrand()" id="Mahindra"><span> Mahindra</span><br>
             </div>
             <div class="Segment">
-                <label for="Segment"><b>Transmission Type</b></label><br>
-                <input type="checkbox" name="Automatic" id="Automatic"><span> Automatic</span><br>
-                <input type="checkbox" name="Manual" id="Manual"><span> Manual</span><br>
+                <label for="Segment" class="label">Transmission Type</label><br>
+                <input type="checkbox" name="Automatic" onclick="filtertype()" id="Automatic"><span> Automatic</span><br>
+                <input type="checkbox" name="Manual" onclick="filtertype()" id="Manual"><span> Manual</span><br>
             </div>
             <div class="Segment">
-                <label for="Segment"><b>Seating Capacity</b></label><br>
-                <input type="checkbox" name="5seats" id="seatsless"><span> 5 seats</span><br>
-                <input type="checkbox" name="7seats" id="seatshigh"><span> 7 seats</span><br>
+                <label for="Segment" class="label">Seating Capacity</label><br>
+                <input type="checkbox" name="5seats" onclick="filterseats()" id="seatsless"><span> 5 seats</span><br>
+                <input type="checkbox" name="7seats" onclick="filterseats()" id="seatshigh"><span> 7 seats</span><br>
             </div>
         </div>
 
