@@ -1,0 +1,129 @@
+#Navbar {
+  display: flex;
+  height: 60px;
+  width: 100%;
+  border-bottom: 1px solid rgb(195, 195, 212);
+  background-color: white;
+  position: fixed;
+  top: 0px;
+  align-items: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, Poppins;
+
+    justify-content: space-between;
+}
+
+#left_box {
+  margin-left: 35%;
+ 
+ 
+}
+.rev_logo {
+  height: 46px;
+  width: 62px;
+
+  display: block;
+}
+
+#logo_box {
+  position: relative;
+  display: flex;
+}
+
+.sanitised {
+  margin-top: 35px;
+  font-size: small;
+
+  position: fixed;
+  margin-left: 25px;
+}
+
+/* #right_box {
+  display: flex;
+  height: 50px;
+
+  padding-left: 15%;
+  margin: auto;
+} */
+
+
+#right_box{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+}
+.hyundai_box {
+  border: 1px solid rgb(219, 212, 212);
+  text-align: center;
+  height: 38px;
+  width: 165px;
+  border-radius: 4px;
+}
+.hyundai_box > img {
+  display: block;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.mahindra_box > img {
+  display: block;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.mahindra_box {
+  border: 1px solid rgb(219, 212, 212);
+  text-align: center;
+  height: 38px;
+  width: 165px;
+  border-radius: 4px;
+}
+
+.sign_lg {
+  height: 24px;
+  width: 24px;
+}
+
+a {
+  text-decoration: none;
+ 
+  color: black;
+}
+
+#sign_div {
+  margin-right: 7%;
+  font-size: 15px;
+  display: flex;
+  width: 150px;
+}
+
+
+@media (max-width:785px ){
+    .hyundai_box{
+   
+        height: 38px;
+  width: 125px;
+    }
+
+    .hyundai_box > img{
+        width: 85%;
+        
+ 
+    }
+
+    .mahindra_box{
+        
+        height: 38px;
+  width: 125px;
+    }
+
+    .mahindra_box > img{
+        width: 85%;
+        
+ 
+    }
+
+    #right_box{gap: 10px;
+    }
+}
