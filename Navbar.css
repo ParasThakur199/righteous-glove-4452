@@ -1,3 +1,5 @@
+/* alert navbar ---By Tarak karmakar ---start here */
+
 #Navbar {
   display: flex;
   height: 60px;
@@ -13,24 +15,24 @@
     justify-content: space-between;
 }
 
-#left_box {
+#left_box_nav {
   margin-left: 35%;
  
  
 }
-.rev_logo {
+.rev_logo_nav {
   height: 46px;
   width: 62px;
 
   display: block;
 }
 
-#logo_box {
+#logo_box_nav {
   position: relative;
   display: flex;
 }
 
-.sanitised {
+.sanitised_nav {
   margin-top: 35px;
   font-size: small;
 
@@ -38,41 +40,34 @@
   margin-left: 25px;
 }
 
-/* #right_box {
-  display: flex;
-  height: 50px;
-
-  padding-left: 15%;
-  margin: auto;
-} */
 
 
-#right_box{
+#right_box_nav{
     display: flex;
     gap: 20px;
     align-items: center;
 
 }
-.hyundai_box {
+.hyundai_box_nav {
   border: 1px solid rgb(219, 212, 212);
   text-align: center;
   height: 38px;
   width: 165px;
   border-radius: 4px;
 }
-.hyundai_box > img {
+.hyundai_box_nav > img {
   display: block;
   margin: auto;
   margin-top: 10px;
 }
 
-.mahindra_box > img {
+.mahindra_box_nav > img {
   display: block;
   margin: auto;
   margin-top: 10px;
 }
 
-.mahindra_box {
+.mahindra_box_nav {
   border: 1px solid rgb(219, 212, 212);
   text-align: center;
   height: 38px;
@@ -80,7 +75,7 @@
   border-radius: 4px;
 }
 
-.sign_lg {
+.sign_lg_nav {
   height: 24px;
   width: 24px;
 }
@@ -91,7 +86,7 @@ a {
   color: black;
 }
 
-#sign_div {
+#sign_div_nav {
   margin-right: 7%;
   font-size: 15px;
   display: flex;
@@ -100,30 +95,30 @@ a {
 
 
 @media (max-width:785px ){
-    .hyundai_box{
+    .hyundai_box_nav{
    
         height: 38px;
   width: 125px;
     }
 
-    .hyundai_box > img{
+    .hyundai_box_nav > img{
         width: 85%;
         
  
     }
 
-    .mahindra_box{
+    .mahindra_box_nav{
         
         height: 38px;
   width: 125px;
     }
 
-    .mahindra_box > img{
+    .mahindra_box_nav > img{
         width: 85%;
         
  
     }
 
-    #right_box{gap: 10px;
+    #right_box_nav{gap: 10px;
     }
 }
