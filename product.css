@@ -1,0 +1,95 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+#container {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+}
+
+#sidebar {
+    width: 20%;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    padding-left: 2%;
+}
+
+#bodysection {
+    width: 80%;
+}
+
+img {
+    width: 100%;
+}
+
+#bodysection {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    text-align: center;
+}
+
+.front {
+    display: flex;
+    justify-content: space-around;
+}
+
+.singleData {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 20px;
+}
+
+.Segment {
+    font-size: 19px;
+    margin: 10px;
+    margin-bottom: 20px;
+}
+
+.Segment>span {
+    color: grey;
+    line-height: 30px;
+}
+
+input[type=checkbox] {
+    accent-color: #0ebaba;
+    color: white;
+    width: 18px;
+    height: 18px;
+}
+
+.booking {
+    background-color: #0ebaba;
+    color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 16px;
+    height: 35px;
+}
+#top select{
+    font-weight: 700;
+    height: 25px;
+    border: none;
+    color: #0ebaba;
+}
+
+#top option{
+    font-size: 15px;
+    color: grey;
+}
+
+@media (max-width: 30em) {
+    #bodysection{
+        grid-template-columns: repeat(1,1fr);
+        gap: 20px;
+    }
+}
+
+@media (max-width: 60em) and (min-width: 30em) {
+    #bodysection{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
