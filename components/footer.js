@@ -1,6 +1,45 @@
 const footer =()=>{
 
-    return `  <div id="main_div_footer">
+    return ` <div class="serviceable-cities-wrapper">
+    <div class="page-section-header">
+        <h3 class="header-2 text-white">Serviceable cities</h3>
+    </div>
+    <div class="row">
+        <ul class="serviceable-cities">
+            <li><a href="#">Self Drive Car Rental in Bangalore</a></li>
+            <li><a href="#">Self Drive Car Rental in Hyderabad</a></li>
+            <li><a href="#">Self Drive Car Rental in Mumbai</a></li>
+            <li><a href="#">Self Drive Car Rental in Delhi-NCR</a></li>
+            <li><a href="#">Self Drive Car Rental in Chennai</a></li>
+            <li><a href="#">Self Drive Car Rental in Pune</a></li>
+            <li><a href="#">Self Drive Car Rental in Kolkata</a></li>
+            <li><a href="#">Self Drive Car Rental in Ahmedabad</a></li>
+        </ul>
+        <ul class="serviceable-cities">
+            <li><a href="#">Self Drive Car Rental in Bhubaneswar</a></li>
+            <li><a href="#">Self Drive Car Rental in Chandigarh</a></li>
+            <li><a href="#">Self Drive Car Rental in Coimbatore</a></li>
+            <li><a href="#">Self Drive Car Rental in Jaipur</a></li>
+            <li><a href="#">Self Drive Car Rental in Kochi</a></li>
+            <li><a href="#">Self Drive Car Rental in Mangalore</a></li>
+            <li><a href="#">Self Drive Car Rental in Mysore</a></li>
+            <li><a href="#">Self Drive Car Rental in Nagpur</a></li>
+        </ul>
+
+        <ul class="serviceable-cities">
+            <li><a href="#">Self Drive Car Rental in Surat</a></li>
+            <li><a href="#">Self Drive Car Rental in Tirupati</a></li>
+            <li><a href="#">Self Drive Car Rental in Trivandrum</a></li>
+            <li><a href="#">Self Drive Car Rental in Vadodara</a></li>
+            <li><a href="#">Self Drive Car Rental in Vijayawada</a></li>
+            <li><a href="#">Self Drive Car Rental in Vizag</a></li>
+        </ul>
+
+    </div>
+</div>
+    
+    
+    <div id="main_div_footer">
     <div id="logo_box_foter">
       <img id="rev_footer"
         src="https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/logo/revv-logo.png"
