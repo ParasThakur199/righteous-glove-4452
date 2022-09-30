@@ -12,7 +12,7 @@ const Navbar=()=>{
       </div>
     </div>
   </a>
-  < id="right_box_nav">
+  <div< id="right_box_nav">
     <a href="#">
       <div class="hyundai_box_nav">
         <img
