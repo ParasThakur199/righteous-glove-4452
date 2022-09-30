@@ -1,5 +1,5 @@
 const Navbar=()=>{
-    return `<a href="#">
+    return `<a href="index.html">
     <div id="left_box_nav">
       <div id="logo_box_nav">
         <img
@@ -12,8 +12,8 @@ const Navbar=()=>{
       </div>
     </div>
   </a>
-  < id="right_box_nav">
-    <a href="#">
+  <div  id="right_box_nav">
+    <a href="hyudaisubs.html">
       <div class="hyundai_box_nav">
         <img
           id="test"
@@ -30,13 +30,14 @@ const Navbar=()=>{
     ></a>
     <a href="#">FAQs</a>
     <a href="#">
-      <div id="sign_div_nav">
+      <div id="sign_div_nav" title="modal 1" class="modal modal1">
         <img
           class="sign_lg_nav"
           src="https://www.revv.co.in/grapheneImages/newopen/ic-web-profile-login.svg"
           alt=">"/>Login or Signup
       </div>
-    </a> `
+    </a> 
+    </div>`
 }
 
 export{Navbar}
