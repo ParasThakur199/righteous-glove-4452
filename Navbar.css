@@ -11,19 +11,17 @@
   align-items: center;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, Poppins;
-
-    justify-content: space-between;
+  justify-content: space-between;
+  z-index: 9999;
 }
 
 #left_box_nav {
   margin-left: 35%;
- 
- 
 }
+
 .rev_logo_nav {
   height: 46px;
   width: 62px;
-
   display: block;
 }
 
@@ -35,19 +33,16 @@
 .sanitised_nav {
   margin-top: 35px;
   font-size: small;
-
   position: fixed;
   margin-left: 25px;
 }
 
-
-
-#right_box_nav{
-    display: flex;
-    gap: 20px;
-    align-items: center;
-
+#right_box_nav {
+  display: flex;
+  gap: 20px;
+  align-items: center;
 }
+
 .hyundai_box_nav {
   border: 1px solid rgb(219, 212, 212);
   text-align: center;
@@ -55,13 +50,14 @@
   width: 165px;
   border-radius: 4px;
 }
-.hyundai_box_nav > img {
+
+.hyundai_box_nav>img {
   display: block;
   margin: auto;
   margin-top: 10px;
 }
 
-.mahindra_box_nav > img {
+.mahindra_box_nav>img {
   display: block;
   margin: auto;
   margin-top: 10px;
@@ -80,9 +76,8 @@
   width: 24px;
 }
 
- a {
+a{
   text-decoration: none;
- 
   color: black;
 }
 
@@ -94,33 +89,28 @@
 }
 
 
-@media (max-width:785px ){
-    .hyundai_box_nav{
-   
-        height: 38px;
-  width: 125px;
-    }
+@media (max-width:785px) {
+  .hyundai_box_nav {
+    height: 38px;
+    width: 125px;
+  }
 
-    .hyundai_box_nav > img{
-        width: 85%;
-        
- 
-    }
+  .hyundai_box_nav>img {
+    width: 85%;
+  }
 
-    .mahindra_box_nav{
-        
-        height: 38px;
-  width: 125px;
-    }
+  .mahindra_box_nav {
+    height: 38px;
+    width: 125px;
+  }
 
-    .mahindra_box_nav > img{
-        width: 85%;
-        
- 
-    }
+  .mahindra_box_nav>img {
+    width: 85%;
+  }
 
-    #right_box_nav{gap: 10px;
-    }
+  #right_box_nav {
+    gap: 10px;
+  }
 }
 
 
@@ -134,19 +124,18 @@
   width: 40%;
   margin: 20% auto;
 }
-.modal {
 
+.modal {
   padding: 2% 7%;
   margin: 1%;
   border-radius: 10px;
   font-size: larger;
   font-weight: bolder;
   cursor: pointer;
-
   border: none;
 }
-.main {
 
+.main {
   margin-right: 22%;
   border-radius: 20px;
   padding: 4%;
@@ -156,7 +145,6 @@
   position: fixed;
   content: attr(title);
   width: 30%;
-
   border: 1px solid gray;
   background-color: azure;
   z-index: 1;
@@ -171,12 +159,11 @@
 
 .green {
   cursor: pointer;
-
   padding: 2% 6%;
   border: none;
-
   margin: 0% 25%;
 }
+
 .red {
   cursor: pointer;
   background-color: red;
@@ -184,6 +171,7 @@
   border: none;
   color: whitesmoke;
 }
+
 .del {
   width: 25px;
   position: absolute;
@@ -191,6 +179,7 @@
   left: 90%;
   cursor: pointer;
 }
+
 .del:hover {
   color: red;
   filter: invert();

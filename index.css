@@ -1,6 +1,8 @@
 
 body{
     background-color: #f1f4f8;
+    margin: 0;
+    padding: 0;
 }
 #photo{
     width: auto;
@@ -208,8 +210,9 @@ form input{
     font-size:18px;
     border: 1px solid rgb(173, 172, 172);
     border-radius: 10px;
-    margin-left: 12px;
+    /* margin-left: 12px; */
     margin-top:10px ;
+    padding-left: 23px;
 }
 #search{
     width: 80%;
