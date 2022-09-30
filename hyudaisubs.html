@@ -10,8 +10,7 @@
 
         #photo{
             width: auto;
-            height: auto;
-            border: 1px solid red;
+            height: auto;           
             position: relative ;
         }
         #photo>img{
@@ -22,57 +21,133 @@
             width: 50%;
             height: 400px;
             top: 5%;
-            left: 8%;
-            border: 1px solid black;
+            left: 7%;
+            border-radius: 5px;               
             background-color: white;
-
+        }
+        #box>p{
+            font-family: Poppins;
+            text-align: center;
+        }
+        #box>h5{
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+            font-size: 18px;
+        }
+        #box>h2{
+            font-family: Poppins;
+            text-align: center;
+        }
+        #box>input{
+            padding: 10px 50px;
+            margin-left: 33px;
+            margin-top: 15px;
+            border-top: none;   
+            border-right: none;
+            border-left: none;
+        }
+        #box>select{
+            padding: 10px 250px;  
+            margin-left: 30px;   
+            border-top: none;   
+            border-right: none;
+            border-left: none;             
+        }
+        #box>button{
+            padding: 10px 120px;
+            margin-top: 30px;
+            margin-left: 25%;
         }
         #lilbox{
             position: absolute;
-            width: 25%;
+            width: 32%;
             height: 90px;
             top: 5%;
             left: 65%;
-            border: 1px solid red;
+            border-radius: 5px;           
             background-color: aliceblue;
             
         }
         #lilbox>p,h3{
-            margin-left: 10px;
+            margin-left: 25px;
         }
         #second{
             display: flex;
-            margin: auto;
-            border: 1px solid blue;
+            margin: auto; width: 97%;
+            height: 270px;
+            background-color: aliceblue;            
         }
-        #dabbe{
-            border: 1px solid blue;
+        #dabbe{            
             width: 20%;
-            height: auto;
-            margin: auto;
-            
+            height: 220px;
+            margin: auto;            
+        }
+        h2{
+            margin-left: 7%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
         #dabbe>img{
             width: 35%;
             height: 35%; 
+            margin-top: 25px;
             margin-left: 25%;
             border: 5px solid grey;
            
             border-radius: 50%;      
         }
-        #faq{
-            border:1px solid red;
-            width: auto;
-            height: 400px;
+        #dabbe>img:hover{
+            box-shadow: rgb(0, 195, 255) 0px 3px 8px;
+            
+
         }
-        #third{
-            border: 1px solid blue;
+        #dabbe>p{
+            font-size: 14px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;            
+            color: black;
+            width: 90%;
+            margin-left: 70px;
+        }
+        #dabbe>h4{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;            
+            color: rgba(255, 74, 67, 0.767);
+            font-size: 20px;
+            margin-bottom: -5px;
+            margin-left: 70px;
+        }
+        #faqcontent{
+            
+            width: 87%;
+            margin: auto;
+            height: 460px;
+            border-radius: 10px;
+            box-shadow: rgb(181, 184, 185) 0px 3px 8px;
+        }
+        #faqcontent>div{
+            width: 100%;
+            margin: auto;
+            height: 100px;    
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+          
+        }
+        #faqcontent>div>h3{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: black;
+            padding-top: 15px;
+            margin-bottom: -10px;
+            margin-left: 35px;
+        }
+        #faqcontent>div>p{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            width: 90%;
+            margin-left: 3%; 
+              
+        }
+        #third{           
             width: auto;
             height: 200px;
             display: flex;
             margin-top: 25px;
-
         }
         #third>div{
             margin: auto;            
@@ -87,10 +162,11 @@
             margin: auto;
         }
         #four{
-            border: 1px solid blue;
+            
             width: auto;
             height: 200px;
             display: flex;
+
         }
         #four>div{
             width: 22%;
@@ -98,7 +174,41 @@
             margin: auto;
             margin-left: 100px;
         }
-
+        #four>div>h3{
+            color: black;
+            margin-left: auto;
+        }
+        #four>div>p{
+            color: rgb(80, 73, 73);
+            margin-top: -5px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+        }
+        #five{
+            width: 90%;
+            margin-top: 30px;
+            display: flex;
+            margin: auto;
+        }
+        #five>div{
+            width: 23%;
+            height: 330px;
+            margin: auto;
+            border-radius: 15px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;            
+        }
+        #five>div>h2{
+            width: 80%;
+           padding-top: 15px;
+           margin-left: 20px; 
+        }
+        #five>div>p{
+            color: rgb(96, 99, 99);
+            width: 70%;
+            font-size: 16px;
+            line-height: 25px;
+            margin-top: 15px;
+            margin-left: 20px;
+        }
     </style>
 
 </head>
@@ -126,7 +236,10 @@
         </select>
         <br>
 
-        <input type="number" placeholder="Select Date"> <br>
+        <input type="number" placeholder="From Date">
+        <input type="number" placeholder="To Date">
+        
+        <br>
         
         <button>Search</button>
 
@@ -154,32 +267,60 @@
 
         <div id="dabbe">
 
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Credit_card_font_awesome.svg/512px-Credit_card_font_awesome.svg.png">
-            <h4>Book & Pay</h4>
-            <p>Pick your favourite car time & place</p>
+            <img src="https://cdn.vectorstock.com/i/1000x1000/40/52/black-and-white-modern-car-simple-logo-vector-31114052.webp">
+            <h4>Receive</h4>
+            <p>We will deliver the car to your doorstep</p>
         </div>
 
         <div id="dabbe">
 
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Credit_card_font_awesome.svg/512px-Credit_card_font_awesome.svg.png">
-            <h4>Book & Pay</h4>
-            <p>Pick your favourite car time & place</p>
+            <img src="https://previews.123rf.com/images/farhad73/farhad731907/farhad73190700064/127324688-car-steering-wheel-icon-isolated-on-white-background-vector-illustration-.jpg">
+            <h4>Drive</h4>
+            <p>Enjoy your Revv self drive</p>
         </div>
 
         <div id="dabbe">
 
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Credit_card_font_awesome.svg/512px-Credit_card_font_awesome.svg.png">
-            <h4>Book & Pay</h4>
-            <p>Pick your favourite car time & place</p>
+            <img src="https://cdn-icons-png.flaticon.com/512/49/49802.png">
+            <h4>Return</h4>
+            <p>Get the car back to your preferred return location, and we will take it from there</p>
         </div>        
        
 
     </div>
 
     <h2>FAQs</h2>
-    <div id="faq">
+    <div id="faqcontent">
 
+        <div>
+            <h3>Is there a speed limit?
+            </h3>
+            <p>Revv allows up to 125 km/hr. However it is 80 km/hr in a few cities where some cars might be equipped with speed governors as per government directives. Revv strictly advises to follow local speed limits.</p>
+        </div>
 
+        <div>
+            <h3>Can I extend/ cancel/ modify?
+            </h3>
+            <p>Yes, extensions are possible subject to availability & charges. Cancellations & modifications will attract nominal charges as per our policy.
+
+            </p>
+        </div>
+
+        <div>
+            <h3>Booking criteria & documents?
+            </h3>
+            <p>Min. 21 years old, have valid original government ID (Aadhar, Passport, or PAN only) and a valid driving licence for “Light Motor Vehicles”, which is min. 1 year old at the time of starting the trip.
+
+            </p>
+        </div>
+        <div>
+            <h3>Are there any restricted areas?
+            </h3>
+            <p>Leh/Ladhakh, Spiti Valley & Kaza/Nako regions are not permitted to take Revv cars. Customer will be fully liable for any damages incurred to the car in that region.</p>
+        </div>
+
+       
+           
     </div>
     <div id="third">
 
@@ -203,7 +344,7 @@
         </div>
         
     </div>
-    <h2>Our Journey </h2>
+    <h2>Our Journey so far </h2>
 
     <div id="four">
         <div>
@@ -213,7 +354,7 @@
         </div>
 
         <div>
-            <img src="https://www.revv.co.in/grapheneImages/newopen/ic-across-india.svg" >
+            <img src="https://www.revv.co.in/grapheneImages/newopen/ic-across-india.svg">
             <h3>22+ Cities</h3>
             <p>Across India</p>
         </div>
@@ -236,8 +377,24 @@
 
     <div id="five">
 
-        <div>
+        <div>           
+            <h2>Sandeep Chowdhary</h2>
+            <p>Self Drive car are now new to me, I was not so comfortable with the idea. However, after using the service of Revv, I am satisfied and look forward to my next trip </p>
+        </div>
 
+        <div>           
+            <h2>Prateek Srivastava</h2>
+            <p> Drive car are now new to me, I was not so comfortable with the idea. </p>
+        </div>
+
+        <div>           
+            <h2>Roshan Raval</h2>
+            <p> Driving is fun of  car are now new to me. However, after using the service of Revv, I am satisfied and look forward to my next trip </p>
+        </div>
+
+        <div>           
+            <h2>Arjit Sarkar</h2>
+            <p>After using the service of Revv, I am satisfied and look forward to my next trip </p>
         </div>
 
     </div>
