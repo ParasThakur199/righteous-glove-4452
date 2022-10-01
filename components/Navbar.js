@@ -7,8 +7,6 @@ const Navbar=()=>{
           src="https://www.revv.co.in/grapheneImages/newopen/logo.svg"
           alt="revv"
         />
-
-        <div class="sanitised_nav">Sanitised. Safe</div>
       </div>
     </div>
   </a>

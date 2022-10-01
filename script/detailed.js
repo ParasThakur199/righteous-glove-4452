@@ -1,6 +1,41 @@
+import { Navbar } from '../components/Navbar.js'
+import { footer } from '../components/footer.js'
+
+let navbar_div = document.getElementById('Navbar')
+navbar_div.innerHTML = Navbar();
+
+let footer_div = document.getElementById('footer')
+footer_div.innerHTML = footer();
+
 let container = document.querySelector('.storedata');
 let storageData = JSON.parse(localStorage.getItem('carstore'));
 console.log(storageData);
+
+let locationdata = document.querySelector('.timeperiod1');
+console.log(locationdata)
+let locationdata2 = document.querySelector('.timeperiod2');
+console.log(locationdata2)
+let userInfo = JSON.parse(localStorage.getItem('userInfo'));
+// console.log(userInfo);
+let userdata = (data)=>{
+    let date1data = document.createElement('h3');
+    date1data.innerText = data.date;
+    let date2data = document.createElement('h3');
+    date2data.innerText = data.date1;
+    let loc = document.createElement('p');
+    loc.innerText = data.location;
+    // locationdata.append(date1data,date2data);
+    locationdata2.append(loc)
+}
+userdata(userInfo);
+
+let carname = (dataaa)=>{
+    let carhead = document.createElement('h2');
+    carhead.innerText = dataaa.Name;
+    locationdata.append(carhead);
+}
+carname(storageData)
+
 
 let appendData = (data) => {
     container.innerHTML = null;
@@ -65,7 +100,7 @@ let appendData = (data) => {
         })
         )
         
-        div.append(name, img, frnt);
+        div.append( img, frnt);
         container.append(div);
 }
 appendData(storageData);
