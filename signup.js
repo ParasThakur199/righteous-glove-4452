@@ -24,7 +24,7 @@ const myfun = () => {
                    
         localStorage.setItem("user",JSON.stringify(arr))
         console.log(arr)
-        window.location.href = "sample.html"
+        window.location.href = "login.html"
         alert("SignUp Successful!😊")
         
     }

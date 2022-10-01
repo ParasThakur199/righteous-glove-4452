@@ -52,8 +52,8 @@ const footer =()=>{
     </div>
 
     <div id="mid">
-     <a href="#"> <h4>Home</h4></a>
-      <a href="#"><h4>FAQs</h4></a>
+     <a href="index.html"> <h4>Home</h4></a>
+      <a href="faq.html"><h4>FAQs</h4></a>
      <a href="#"> <h4>Policy</h4></a>
     <a href="#">  <h4>Blog</h4></a>
     </div>

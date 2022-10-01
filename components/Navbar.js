@@ -21,16 +21,16 @@ const Navbar=()=>{
           alt="Hynddai Subcription"
         /></div
     ></a>
-    <a href="#">
+    <a href="mahindra.html">
       <div class="mahindra_box_nav">
         <img
           src="https://www.revv.co.in/imgs/mahindra_logo_hover.svg"
           alt="Mahindra Subcription"
         /></div
     ></a>
-    <a href="#">FAQs</a>
-    <a href="#">
-      <div id="sign_div_nav" title="modal 1" class="modal modal1">
+    <a href="faq.html">FAQs</a>
+    <a href="signup.html">
+      <div id="sign_div_nav" >
         <img
           class="sign_lg_nav"
           src="https://www.revv.co.in/grapheneImages/newopen/ic-web-profile-login.svg"
