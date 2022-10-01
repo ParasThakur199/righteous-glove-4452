@@ -1,5 +1,5 @@
 
-let user=JSON.parse(localStorage.getItem('userInfo')) || []
+let user=JSON.parse(localStorage.getItem('userInfo')) 
 let searchBtn=document.getElementById('search')
 searchBtn.addEventListener('click',(event)=>{
 
@@ -19,8 +19,8 @@ searchBtn.addEventListener('click',(event)=>{
         date1,
     }
 
-    user.push(obj)
+    // user.push(obj)
 
-    localStorage.setItem('userInfo',JSON.stringify(user))
-    window.location.href='products.html'
+    localStorage.setItem('userInfo',JSON.stringify(obj))
+    window.location.href='./products.html'
 })
