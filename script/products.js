@@ -112,7 +112,7 @@ let main = document.querySelector('#bodysection');
 console.log(obj)
 let appendData = (data)=>{
     main.innerHTML = null;
-    data.forEach(el => {
+    data.forEach((el,index) => {
         let div = document.createElement('div');
         div.setAttribute('class','singleData');
         let name = document.createElement('h2');
@@ -132,6 +132,9 @@ let appendData = (data)=>{
         price.innerText = `₹ ${el.Price}`;
         let btn = document.createElement('button');
         btn.innerText='Book';
+        btn.addEventListener('click',()=>{
+            clickbook(data,index);
+        });
         btn.setAttribute('class','booking');
         secdiv.append(price,btn);
         div.append(name,img,frnt,secdiv);
@@ -139,6 +142,16 @@ let appendData = (data)=>{
     });
 }
 appendData(obj);
+
+const clickbook = ((data,index)=>{
+    data.filter((el,i)=>{
+        if(index==i){
+            console.log(el);
+            localStorage.setItem('carstore',JSON.stringify(el));
+            window.location.href='./detailed.html';
+        }
+    });
+})
 
 function lowtohigh(e) {
     // console.log(e.target.value);
@@ -242,12 +255,11 @@ const filterbrand = ()=>{
 const filtertype=(()=>{
     let Automatic = document.querySelector('#Automatic').checked;
     let Manual = document.querySelector('#Manual').checked;
-
     if(Automatic==true){
         let data2 = document.querySelector('#Automatic').name;
         let res = obj.filter((el)=>{
             if(el.Transmission==data2){
-                return data2
+                return data2;
             }
         })
         appendData(res);
@@ -267,12 +279,11 @@ const filtertype=(()=>{
 const filterseats=(()=>{
     let seatsless = document.querySelector('#seatsless').checked;
     let seatshigh = document.querySelector('#seatshigh').checked;
-
     if(seatsless==true){
         let data3 = document.querySelector('#seatsless').name;
         let res = obj.filter((el)=>{
             if(el.Seats==5){
-                return el.Seats
+                return el.Seats;
             }
         });
         appendData(res);
