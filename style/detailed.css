@@ -61,24 +61,34 @@ body {
 
 #parentwrapper {
     display: grid;
-    grid-template-areas: "a1 a2 a2";
+    grid-template-areas: "a1 a2 a3";
 }
 
 .storedata {
-    grid-area: a1;
-    height: 25px;
-    width: 40%;
+    grid-area: a2;
+    height: 30px;
+    width: 80%;
     margin-left: 10px;
     text-align: center;
 }
 
-.timeperiod {
-    grid-area: a2;
+.timeperiod1 {
+    grid-area: a1;
     height: 25px;
     width: 100%;
     display: flex;
+    font-size: 25px;
+    color: gray;
 }
-
+.timeperiod2 {
+    grid-area: a3;
+    height: 25px;
+    /* width: 100%; */
+    display: flex;
+    font-size: 25px;
+    font-weight: 600;
+    color: #0ebaba;
+}
 .name {
     padding-bottom: 12%;
 }

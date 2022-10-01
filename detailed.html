@@ -17,10 +17,9 @@
     <div id="container"></div>
     <div id="main">
         <div class="wrapper1" id="parentwrapper">
+            <div class="timeperiod1"></div>
             <div class="storedata"></div>
-            <div class="timeperiod">
-                <h2><span>BOOKING DETAILS</span></h2>
-            </div>
+            <div class="timeperiod2"></div>
         </div>
         <div class="wrapper2">
             <h4><span>IMPORTANT POINTS TO REMEMBER</span></h4>
@@ -104,14 +103,5 @@
 </body>
 
 </html>
-<script type="module">
-    import { Navbar } from '../components/Navbar.js'
-    import { footer } from '../components/footer.js'
-  
-    let navbar_div = document.getElementById('Navbar')
-    navbar_div.innerHTML = Navbar();
-  
-    let footer_div = document.getElementById('footer')
-    footer_div.innerHTML = footer();
-  </script>
-<script src="./script/detailed.js"></script>
+
+<script type="module" src="./script/detailed.js"></script>

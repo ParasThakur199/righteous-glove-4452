@@ -41,10 +41,10 @@ const detail = (obj) => {
     })
     if(count >= 1 && temp < arr.length){
         
-        window.location.href = "index.html"
-        alert("login successful")
+        window.location.href = "./index.html"
+        alert("Congratulations!! login successfully😀");
     }else{
-        alert("Unseccessful")
+        alert("Please Check Credientials😥")
     }
 
 }
