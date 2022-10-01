@@ -1,0 +1,235 @@
+#photo {
+    width: auto;
+    height: auto;
+    position: relative;
+}
+
+#photo>img {
+    width: 100%;
+}
+
+#box {
+    position: absolute;
+    width: 50%;
+    height: 400px;
+    top: 5%;
+    left: 7%;
+    border-radius: 5px;
+    background-color: white;
+}
+
+#box>p {
+    font-family: Poppins;
+    text-align: center;
+}
+
+#box>h5 {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 18px;
+}
+
+#box>h2 {
+    font-family: Poppins;
+    text-align: center;
+}
+
+#box>input {
+    padding: 10px 50px;
+    margin-left: 33px;
+    margin-top: 15px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+
+#box>select {
+    padding: 10px 250px;
+    margin-left: 30px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+
+#box>button {
+    padding: 10px 120px;
+    margin-top: 30px;
+    margin-left: 25%;
+}
+
+#lilbox {
+    position: absolute;
+    width: 32%;
+    height: 90px;
+    top: 5%;
+    left: 65%;
+    border-radius: 5px;
+    background-color: aliceblue;
+
+}
+
+#lilbox>p,
+h3 {
+    margin-left: 25px;
+}
+
+#second {
+    display: flex;
+    margin: auto;
+    width: 97%;
+    height: 270px;
+    background-color: aliceblue;
+}
+
+#dabbe {
+    width: 20%;
+    height: 220px;
+    margin: auto;
+}
+
+h2 {
+    margin-left: 7%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#dabbe>img {
+    width: 35%;
+    height: 35%;
+    margin-top: 25px;
+    margin-left: 25%;
+    border: 5px solid grey;
+
+    border-radius: 50%;
+}
+
+#dabbe>img:hover {
+    box-shadow: rgb(0, 195, 255) 0px 3px 8px;
+
+
+}
+
+#dabbe>p {
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    width: 90%;
+    margin-left: 70px;
+}
+
+#dabbe>h4 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgba(255, 74, 67, 0.767);
+    font-size: 20px;
+    margin-bottom: -5px;
+    margin-left: 70px;
+}
+
+#faqcontent {
+
+    width: 87%;
+    margin: auto;
+    height: 460px;
+    border-radius: 10px;
+    box-shadow: rgb(181, 184, 185) 0px 3px 8px;
+}
+
+#faqcontent>div {
+    width: 100%;
+    margin: auto;
+    height: 100px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+}
+
+#faqcontent>div>h3 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    padding-top: 15px;
+    margin-bottom: -10px;
+    margin-left: 35px;
+}
+
+#faqcontent>div>p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 90%;
+    margin-left: 3%;
+
+}
+
+#third {
+    width: auto;
+    height: 200px;
+    display: flex;
+    margin-top: 25px;
+}
+
+#third>div {
+    margin: auto;
+    border-radius: 25px;
+}
+
+#third>div:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#third>div>a>img {
+    height: 50%;
+    width: 150px;
+    margin: auto;
+}
+
+#four {
+
+    width: auto;
+    height: 200px;
+    display: flex;
+
+}
+
+#four>div {
+    width: 22%;
+    height: auto;
+    margin: auto;
+    margin-left: 100px;
+}
+
+#four>div>h3 {
+    color: black;
+    margin-left: auto;
+}
+
+#four>div>p {
+    color: rgb(80, 73, 73);
+    margin-top: -5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#five {
+    width: 90%;
+    margin-top: 30px;
+    display: flex;
+    margin: auto;
+}
+
+#five>div {
+    width: 23%;
+    height: 330px;
+    margin: auto;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#five>div>h2 {
+    width: 80%;
+    padding-top: 15px;
+    margin-left: 20px;
+}
+
+#five>div>p {
+    color: rgb(96, 99, 99);
+    width: 70%;
+    font-size: 16px;
+    line-height: 25px;
+    margin-top: 15px;
+    margin-left: 20px;
+}
