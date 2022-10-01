@@ -6,10 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./product.css">
+    <link rel="stylesheet" href="./style/product.css">
+    <link rel="stylesheet" href="./style/Navbar.css">
+    <link rel="stylesheet" href="./style/footer.css">
 </head>
 
 <body>
+    <div id="Navbar"></div>
     <div id="top">
         <label for="Sort by">Sort by : </label>
         <select name="Popularity" id="Popularity" onchange="lowtohigh(event)">
@@ -23,7 +26,8 @@
         <div id="sidebar">
             <div class="Segment">
                 <label for="Segment" class="label">Segment</label><br>
-                <input type="checkbox" name="Hatchback" onclick="filterdata()" id="Hatchback"><span> Hatchback</span><br>
+                <input type="checkbox" name="Hatchback" onclick="filterdata()" id="Hatchback"><span>
+                    Hatchback</span><br>
                 <input type="checkbox" name="Sedan" onclick="filterdata()" id="Sedan"><span> Sedan</span><br>
                 <input type="checkbox" name="SUV" onclick="filterdata()" id="SUV"><span> SUV</span><br>
             </div>
@@ -36,7 +40,8 @@
             </div>
             <div class="Segment">
                 <label for="Segment" class="label">Transmission Type</label><br>
-                <input type="checkbox" name="Automatic" onclick="filtertype()" id="Automatic"><span> Automatic</span><br>
+                <input type="checkbox" name="Automatic" onclick="filtertype()" id="Automatic"><span>
+                    Automatic</span><br>
                 <input type="checkbox" name="Manual" onclick="filtertype()" id="Manual"><span> Manual</span><br>
             </div>
             <div class="Segment">
@@ -49,7 +54,19 @@
         <div id="bodysection"></div>
 
     </div>
+
+    <div id="footer"></div>
 </body>
 
 </html>
-<script src="./products.js"></script>
+<script type="module">
+    import { Navbar } from '../components/Navbar.js'
+    import { footer } from '../components/footer.js'
+  
+    let navbar_div = document.getElementById('Navbar')
+    navbar_div.innerHTML = Navbar();
+  
+    let footer_div = document.getElementById('footer')
+    footer_div.innerHTML = footer();
+  </script>
+<script src="./script/products.js"></script>

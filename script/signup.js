@@ -1,13 +1,12 @@
 function details(em,p){
 
-  
     this.email = em;
     this.password = p
 }
 let arr = JSON.parse(localStorage.getItem("user")) || []
 
 document.getElementById("next").addEventListener("click",function(){
-    myfun()
+    myfun();
 })
 
 const myfun = () => {
