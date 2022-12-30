@@ -38,4 +38,5 @@ Book your car not in day's but within hours
 <h1>View Deployment</h1>
 </hr>
 <h4>Checkout live  :</h4>
-https://medium.com/@parasjamwal19/travelocity-clone-e2992fdec263
+https://papaya-zuccutto-5a5056.netlify.app/
+
